@@ -1,0 +1,49 @@
+---
+alwaysApply: false
+---
+# Python编码规范
+
+## 代码风格
+- 使用Python 3.6+语法
+- 遵循PEP 8编码规范
+- 使用4个空格缩进
+- 行长度限制在79字符以内
+
+## 导入规范
+```python
+# 标准库导入
+import os
+import sys
+from pathlib import Path
+
+# 第三方库导入
+import numpy as np
+import pandas as pd
+import mxnet as mx
+
+# 本地模块导入
+from . import utils
+from .operators import base_rnn
+```
+
+## 数据处理函数
+- 使用类型提示 (type hints)
+- 添加详细的文档字符串
+- 处理异常情况
+- 使用numpy进行数值计算
+
+## 深度学习相关
+- 使用MXNet框架
+- 模型配置使用YAML格式
+- 支持GPU和CPU训练
+- 保存模型检查点
+
+## 文件命名
+- 使用小写字母和下划线
+- 避免使用特殊字符
+- 描述性文件名
+
+## 注释规范
+- 中文注释用于业务逻辑说明
+- 英文注释用于技术实现细节
+- 复杂算法需要详细注释
